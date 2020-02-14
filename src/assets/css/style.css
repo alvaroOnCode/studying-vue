@@ -111,6 +111,7 @@ a {
     height: 350px;
     line-height: 138px;
     color: white;
+    transition: 300ms all;
     
     /* Gradient */
     background: rgba(33,242,148,1);
@@ -146,8 +147,8 @@ a {
     text-shadow: none;
     text-transform: uppercase;
     line-height: 30px;
-    transition: 300ms all ease-in-out;
     cursor: pointer;
+    transition: 300ms all ease-in-out;
 }
 
 .slider-btn:hover {
