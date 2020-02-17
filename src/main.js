@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import App from './App.vue'
+import Vuelidate from 'vuelidate'
 import VueRouter from 'vue-router'
 
+import App from './App.vue'
 import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
 import LastPosts from './components/LastPosts/LastPosts'
@@ -11,6 +12,7 @@ import Post from './components/Post/Post'
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
+Vue.use(Vuelidate)
 
 const routes = [
   {

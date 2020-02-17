@@ -8,7 +8,7 @@
         </router-link>
         <!-- <a href="index.html"><img src="../../assets/logo.png" class="app-logo" alt="Logo"></a> -->
         <span id="brand">
-          <strong>Studying</strong>CSS
+          <strong>Studying</strong>Vue
         </span>
       </div>
 

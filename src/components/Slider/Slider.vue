@@ -1,6 +1,6 @@
 <template>
   <div id="slider" v-bind:class="size">
-    <h1>{{ text }}</h1>
+    <h1 v-html="text"></h1>
     <div v-if="size === 'slider-large'" class="slider-btn" @click="redirectToBlog">Go to Blog</div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
         this.$router.currentRoute.path === "/" ||
         this.$router.currentRoute.path === "/home"
       ) {
-        this.text = `Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Vue is designed from the ground up to be incrementally adoptable.`;
+        this.text = "Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.<br/>Vue is designed from the ground up to be incrementally adoptable.";
       } else {
         this.text =
           "Vue is a progressive framework for building user interfaces.";

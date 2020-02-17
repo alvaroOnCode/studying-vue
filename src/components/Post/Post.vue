@@ -2,12 +2,12 @@
   <div id="posts">
     <article class="post-item">
       <div class="img-wrap">
-        <img :src="src" :alt="alt" />
+        <img :src="post.src" :alt="post.alt" />
       </div>
 
-      <h2>{{ title }}</h2>
-      <span class="date">{{ date }}</span>
-      <a :href="href">Read more</a>
+      <h2>{{ post.title }}</h2>
+      <span class="date">{{ post.date }}</span>
+      <a :href="post.href">Read more</a>
 
       <!-- Clear Floats -->
       <div class="clearfix"></div>
@@ -18,27 +18,6 @@
 <script>
 export default {
   name: "Post",
-  props: {
-    src: {
-      type: String,
-      required: true
-    },
-    alt: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String,
-      required: true
-    },
-    date: {
-      type: String,
-      required: true
-    },
-    href: {
-      type: String,
-      required: true
-    }
-  }
+  props: ["post"]
 };
 </script>

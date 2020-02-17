@@ -1,15 +1,7 @@
 <template>
   <section id="content">
     <h2 class="content-title">{{ title }}</h2>
-    <Post
-      v-for="post in posts"
-      :key="post.id"
-      :src="post.src"
-      :alt="post.alt"
-      :title="post.title"
-      :date="post.date"
-      :href="post.date"
-    ></Post>
+    <Post v-for="post in posts" :key="post.id" :post="post"></Post>
   </section>
 </template>
 
@@ -22,6 +14,7 @@ export default {
   },
   data: () => ({
     title: "Last posts",
+    newsUrl: "http://newsapi.org/v2/top-headlines?country=ca&category=technology&apiKey=" + process.env.VUE_APP_NEWS_API_KEY,
     posts: [
       {
         id: "evanYou",
