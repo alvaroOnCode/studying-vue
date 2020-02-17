@@ -3,7 +3,7 @@
     <div class="center">
       <!-- Logo -->
       <div id="logo">
-        <router-link to="home">
+        <router-link to="/home">
           <img src="../../assets/logo.png" class="app-logo" alt="Logo" />
         </router-link>
         <!-- <a href="index.html"><img src="../../assets/logo.png" class="app-logo" alt="Logo"></a> -->
@@ -16,7 +16,7 @@
       <nav id="menu">
         <ul>
           <li>
-            <router-link to="./blog" active-class="active">Blog</router-link>
+            <router-link to="/blog" active-class="active">Blog</router-link>
             <!-- <a href="./blog.html">Blog</a> -->
           </li>
           <li>
@@ -28,7 +28,7 @@
             <!-- <a href="#">Projects</a> -->
           </li>
           <li>
-            <router-link to="./contact" active-class="active">Contact</router-link>
+            <router-link to="/contact" active-class="active">Contact</router-link>
             <!-- <a href="./contact.html">Contact</a> -->
           </li>
         </ul>

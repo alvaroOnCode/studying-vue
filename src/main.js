@@ -9,8 +9,9 @@ import App from './App.vue'
 import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
 import LastPosts from './components/LastPosts/LastPosts'
-import NotFound from './components/NotFound/NotFound.vue'
-import Post from './components/Post/Post'
+import NewsContent from './components/NewsContent/NewsContent'
+import NotFound from './components/NotFound/NotFound'
+import PostContent from './components/PostContent/PostContent'
 
 Vue.config.productionTip = false
 
@@ -39,8 +40,12 @@ const routes = [
   },
   {
     path: '/post/:id',
-    component: Post,
-    name: 'post'
+    component: PostContent
+  },
+  {
+    path: '/news/:urlToImage&title&publishedAt&content',
+    component: NewsContent,
+    name: 'news'
   },
   // Not Found must be the last one!
   {
