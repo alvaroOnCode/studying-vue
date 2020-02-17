@@ -3,7 +3,7 @@
     <div class="center">
       <p>
         &copy; {{ year }} · Learning with
-        <a href="https://victorroblesweb.es/">Víctor Robles'</a> JavaScript Master |
+        <a href="https://victorroblesweb.es/">Víctor Robles'</a> JavaScript Master ·
         Powered by
         <a href="https://newsapi.org/">NewsAPI</a>
       </p>

@@ -1,5 +1,8 @@
 import Vue from 'vue'
+
+import moment from 'moment-timezone'
 import Vuelidate from 'vuelidate'
+import VueMoment from 'vue-moment'
 import VueRouter from 'vue-router'
 
 import App from './App.vue'
@@ -13,6 +16,9 @@ Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 Vue.use(Vuelidate)
+Vue.use(VueMoment, {
+  moment
+})
 
 const routes = [
   {

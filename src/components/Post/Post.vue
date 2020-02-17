@@ -1,5 +1,5 @@
 <template>
-  <div id="posts">
+  <div id="posts" v-if="post">
     <article class="post-item">
       <div class="img-wrap">
         <img :src="post.src" :alt="post.alt" />
